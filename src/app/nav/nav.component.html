@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+    <span style="margin-left: 0.5%;">Test Navbar</span>
+    <span style="flex: 1 1 auto;"></span>
+    <span>Navbar side options</span>
+</mat-toolbar>
+
+<div class="main">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <input type="text"
+                    placeholder="Pick one"
+                    aria-label="Number"
+                    matInput
+                    [formControl]="myControl"
+                    [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of options" [value]="option">
+                {{option}}
+            </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <br><button mat-button>Click me!</button>
+    </form>
+</div>
