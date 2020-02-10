@@ -1,0 +1,27 @@
+<div class="container"
+    fxLayout
+    fxLayout.xs="column"
+    fxLayoutAlign="center"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0">
+    <div class="item item-1" fxFlex="15%"></div>
+    <div class="item item-2" fxFlex>
+        <div class="main hero">
+            <mat-vertical-stepper [linear]="false" #stepper>
+                <mat-step>
+                    <ng-template matStepLabel>Era 1000</ng-template>
+                    <p>Description of Era</p>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>Era 2000</ng-template>
+                    <p>Description of Era</p>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>Era 3000</ng-template>
+                    <p>Description of Era</p>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
+    </div>
+    <div class="item item-1" fxFlex="15%"></div>
+</div>

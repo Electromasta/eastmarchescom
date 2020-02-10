@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { FormControl } from '@angular/forms';
-
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -9,8 +7,6 @@ import { FormControl } from '@angular/forms';
 })
 export class NavComponent implements OnInit {
   constructor() { }
-  myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
 
   ngOnInit(): void {
   }
