@@ -1,5 +1,5 @@
 <mat-toolbar color="primary" fxLayout fxLayout.xs="row" [hidden]="!showNavbar">
-    <span fxFlex="16%"></span>
+    <span fxFlex="16%"><button mat-icon-button (click)="toggleSidebar()" [hidden]="!showNavbar"><mat-icon>menu</mat-icon></button></span>
     <span>The Eastmarches</span>
     <span fxFlex></span>
     <button mat-icon-button routerLink="/atlas"><span>Atlas</span><mat-icon>public</mat-icon></button>

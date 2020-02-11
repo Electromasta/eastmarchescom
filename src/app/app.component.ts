@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavService } from './nav.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private router: Router) {};
   title = 'eastmarches';
   viewName = ' /';
   showNavbar = false;
+  showSidebar = false;
+
+  constructor(private router: Router, private navService: NavService) {};
 
   changeOfRoutes()  {
     if  (this.router.url === "/hero")  {
@@ -29,5 +32,10 @@ export class AppComponent {
       this.viewName = " /era"
       this.showNavbar = true;
     }
+  }
+
+  toggleSidebar()  {
+    this.showSidebar = !this.showSidebar;
+    this.navService.setToggle(this.showSidebar);
   }
 }

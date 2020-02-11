@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,8 +18,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatSortModule } from '@angular/material/sort';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { NgxXml2jsonModule } from 'ngx-xml2json';
 
 import { AtlasComponent } from './atlas/atlas.component';
 import { NavComponent } from './nav/nav.component';
@@ -34,7 +37,7 @@ import { EraComponent } from './era/era.component';
     EraComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, BrowserAnimationsModule,
+    BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule,
     ReactiveFormsModule, FormsModule,
     MatNativeDateModule,
     MatToolbarModule,
@@ -48,7 +51,9 @@ import { EraComponent } from './era/era.component';
     MatCardModule,
     MatTabsModule,
     MatStepperModule,
+    MatSortModule,
     FlexLayoutModule,
+    NgxXml2jsonModule,
     LeafletModule.forRoot()
   ],
   providers: [],
