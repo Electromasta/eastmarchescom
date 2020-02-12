@@ -8,7 +8,7 @@ import { EraComponent } from './era/era.component';
 
 
 const routes: Routes = [
-  {path: '', component: AtlasComponent},
+  {path: '', component: HeroComponent},
   {path: 'hero', component: HeroComponent},
   {path: 'nav', component: NavComponent},
   {path: 'atlas', component: AtlasComponent},
@@ -16,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {anchorScrolling: 'enabled', onSameUrlNavigation: 'reload', scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

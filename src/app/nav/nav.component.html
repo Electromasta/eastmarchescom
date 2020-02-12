@@ -1,18 +1,16 @@
 <mat-sidenav-container class="nav" [hasBackdrop]="false">
     <mat-sidenav #sidenav style="width: 250px" mode="over">
-        <div class="navbody">
-            <h3>1. Bookmark</h3>
-            <p>Description of Bookmark</p>
-            <h3>2. Bookmark</h3>
-            <p>Description of Bookmark</p>
-            <h3>3. Bookmark</h3>
-            <p>Description of Bookmark</p>
-            <h3>4. Bookmark</h3>
-            <p>Description of Bookmark</p>
+        <div *ngIf="bookmark != null" class="navbody">
+            <div *ngFor="let section of bookmark.sections">
+                <button mat-button (click)="onBMClick($event, section)"><mat-icon>bookmark</mat-icon>{{section.header.substring(0, 18)}}</button>
+                <p *ngIf="section.text">{{section.text.substring(0, 24)}}...</p>
+                <!--<mat-divider></mat-divider>-->
+            </div>
+            <button mat-button (click)="onBMClick($event, '#')"><mat-icon>bookmark</mat-icon>Back to Top</button>
         </div>
     </mat-sidenav>
-    <!--<mat-sidenav opened mode="side" position="end">End content</mat-sidenav>-->
-    <div class="container"
+
+    <div class="container navcontents"
         fxLayout
         fxLayout.xs="column"
         fxLayoutAlign="center"
@@ -20,12 +18,12 @@
         fxLayoutGap.xs="0">
         <div class="item item-1" fxFlex="15%"></div>
         <div class="item item-2" fxFlex>
-            <mat-tab-group animationDuration="0ms" class="nav">
+            <mat-tab-group animationDuration="0ms" (selectedTabChange)="tabChanged($event)" class="nav" [dynamicHeight]="true">
                 <div *ngFor="let page of pages">
                 <mat-tab label="{{page.title}}">
                     <div class="main">
                         <div *ngFor="let section of page.sections">
-                            <h1>{{section.header}}</h1>
+                            <h1 id="{{section.bookmark}}">{{section.header}}</h1>
                             <p *ngIf="section.text">{{section.text}}</p>
                             <div *ngFor="let subsection of section.subsections">
                                 <h4><strong>{{subsection.header}}</strong></h4>

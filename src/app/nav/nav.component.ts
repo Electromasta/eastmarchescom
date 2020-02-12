@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { MatSidenav } from '@angular/material/sidenav';
+import { MatTabChangeEvent } from '@angular/material/tabs';
 import { NgxXml2jsonService } from 'ngx-xml2json';
 
 import { NavService } from '../nav.service';
@@ -20,19 +22,21 @@ export class NavComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
   private headers = new HttpHeaders(); 
   private testFile = 'assets/booklet/index.xml';
-  pages = new Array();
+  pages: Array<Page> = new Array<Page>();
+  bookmark: Page;
 
-  constructor(private navService: NavService, private http: HttpClient, private ngxXml2jsonService: NgxXml2jsonService) {
+  constructor(private viewportScroller: ViewportScroller, private navService: NavService, private http: HttpClient, private ngxXml2jsonService: NgxXml2jsonService) {
     this.headers = this.headers.append('Content-Type', 'text/xml'); 
     this.headers = this.headers.append('Accept', 'text/xml');
 
     this.http.get(this.testFile, {responseType: 'text'}).subscribe(data => {
       this.read(data)['files'].file.forEach(i => {
         this.http.get('assets/booklet/' + i + '.xml', {responseType: 'text'}).subscribe(data => {
-          this.pages.push(this.parse(this.read(data)));
+          this.pages.push(this.parse(this.read(data), i));
         });
       });
     });
+    this.pages = this.pages.sort((x, y) => x.order - y.order);
   }
 
   ngOnInit()  {
@@ -48,8 +52,9 @@ export class NavComponent implements OnInit {
     return json;
   }
 
-  parse(json) {
+  parse(json, filename) {
     var sections = new Array<Section>();
+    var bookmark = 0;
 
     this.arrayify(json['page'].section).forEach(section => {
       var subsections: Array<Subsection> = new Array<Subsection>();
@@ -91,7 +96,8 @@ export class NavComponent implements OnInit {
         table = new Table(section.table.header, columns, rows);
       }
       
-      sections.push(new Section(section.header, section.text, subsections, list, table));
+      sections.push(new Section(filename + "-" + bookmark, section.header, section.text, subsections, list, table));
+      bookmark++;
     });
     
     var page = new Page(json.page.order, json.page.title, sections);
@@ -105,5 +111,21 @@ export class NavComponent implements OnInit {
       x = temp;
     }
     return x;
+  }
+
+  tabChanged(tabChangeEvent: MatTabChangeEvent)  {
+    this.pages.forEach(page => {
+      if (page.order == tabChangeEvent.index)
+        this.bookmark = page
+    });
+  }
+
+  onBMClick(event, id) {
+    console.log(id);
+    if (id != "#")
+      this.viewportScroller.scrollToAnchor(id.bookmark);
+    else
+      this.viewportScroller.scrollToPosition([0, 0]);
+    
   }
 }

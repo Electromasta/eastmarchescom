@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<page>
+    <order>0</order>
+    <title>General Houserules</title>
+    <section>
+        <header>General Rules</header>
+        <subsection>
+            <header>Ammunition</header>
+            <text>Instead of tracking each individual shot, you have an ammunition die. Roll it whenever you take a shot. If you roll a 1 or 2, the die decreases by one step. When you use the last arrow or bolt, you have run out of ammunition. </text>
+            <list>
+                <header></header>
+                <text>d12 -> d10 -> d8 -> d6 -> d4 -> 1 </text>
+            </list>
+        </subsection>
+        <subsection>
+            <header>Darkvision</header>
+            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness.</text>
+        </subsection>
+        <subsection>
+            <header>Diverse Weapons</header>
+            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness </text>
+            <list>
+                <header>Flails</header>
+                <text> gain the trait Versatile (2d4), and can do slashing or bludgeoning damage.</text>
+            </list>
+            <list>
+                <header>Morningstars</header>
+                <text> gain the trait Versatile (2d4), and can do piercing or bludgeoning damage.</text>
+            </list>
+            <list>
+                <header>War-Picks</header>
+                <text> gain the trait Versatile (2d4), and can do slashing or piercing damage.</text>
+            </list>
+            <list>
+                <header>Sickles</header>
+                <text> have the finesse trait</text>
+            </list>
+            <list>
+                <header>Tridents</header>
+                <text> (or martial spears) do 1d8 damage and have the trait Versatile (1d10)</text>
+            </list>
+            <list>
+                <header></header>
+                <text>A magic item with the thrown tag returns to your hand when thrown as a free action.</text>
+            </list>
+            <list>
+                <header></header>
+                <text>Same bonus's from magic items do not stack.</text>
+            </list>
+        </subsection>
+        <subsection>
+            <header>Dual Weilding</header>
+            <text>While dual wielding, you have +1 to AC </text>
+        </subsection>
+        <subsection>
+            <header>Flanking</header>
+            <text>When two humanoids are on opposite sides of another humanoid, the other humanoid is considered 'flanked' and has -2 AC vs melee attacks.</text>
+        </subsection>
+        <subsection>
+            <header>Unconscious</header>
+            <text>When Unconscious status ends, gain exhaustion.</text>
+        </subsection>
+        <subsection>
+            <header>Death</header>
+            <text>When revived from the dead, gain a permanent injury, unless the party succeeds a skill challenge.</text>
+        </subsection>
+        <subsection>
+            <header>Old School Undead</header>
+            <text>Healing undead instead damages them, for the maximum amount the spell or ability would do. They can make a charisma saving throw for half. The DC is 8+Proficiency+Casting stat.</text>
+        </subsection>
+        <subsection>
+            <header>Resting</header>
+            <text>Short Rests take 8 hours and long rests take one week (Relaxation Downtime Action). Short rests remove 1 stack of exhaustion, Long rests remove all stacks of exhaustion.</text>
+        </subsection>
+        <subsection>
+            <header>Healing Spirit</header>
+            <text>Grants temporary hit points instead of healing.</text>
+        </subsection>
+        <subsection>
+            <header>Summon Spells, Various</header>
+            <text>Find Familiar cannot use the help action with attacks, unless it is a warlock familiar. When summoning more than 1 creature, you instead summon a swarm. Talk to the DM before the session to get stats for a monster swarm.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Deadfire Initiative</header>
+        <text>Each round, declare your action, and roll initiative based on that action. If you decide to change your action, you got last. Roll 1d10 + a number based on action. On a tie, the action with the longest reach/range wins.</text>
+        <list>
+            <header>Attack:</header>
+            <text>+Dice / 2 (so a dagger is +2, greatsword is +6)</text>
+        </list>
+        <list>
+            <header>Cast:</header>
+            <text>+2 +Spell Level</text>
+        </list>
+        <list>
+            <header>Dash/Disengage/Dodge/Help/Hide/Search:</header>
+            <text>+3</text>
+        </list>
+        <list>
+            <header>Ready an Action:</header>
+            <text>Uses the same bonus as the action would have been, or +3/Dm Decides</text>
+        </list>
+        <list>
+            <header>Use an Object:</header>
+            <text>Uses the same bonus the object emulates, or +3/Dm Decides</text>
+        </list>
+    </section>
+    <section>
+        <header>Encumbrance</header>
+        <text>Inventory is managed by abstract item slots. Characters have item slots equal to 10+ their total strength score. In addition to these slots, characters carry for free one ration box, one waterskin, and one coin purse, enough for 5 days of travel and 100 coins. Some items potentially are even heavier than large on account of weight and/or bulkiness. For example, Leather armor takes up 4 slots, Medium armor takes up 6 slots, and Heavy armor takes up 8 spots. </text>
+        <list>
+            <header>Inconsequential: </header>
+            <text>Items like hats, gloves, bracers ect are considered part of the armor weight</text>
+        </list>
+        <list>
+            <header>Tiny(0.2 Slots): </header>
+            <text>Fingerspan, can hold many in one hand</text>
+        </list>
+        <list>
+            <header>Hand(1 Slot): </header>
+            <text>Handspan, can be comfortably held in one hand</text>
+        </list>
+        <list>
+            <header>Medium(2 Slots): </header>
+            <text>Armspan, can be held in one hand</text>
+        </list>
+        <list>
+            <header>Large(3 Slots): </header>
+            <text>Longer than Armspan, requires two hands to hold</text>
+        </list>
+    </section>
+    <section>
+        <header>TEST of a Long Page</header>
+        <subsection>
+            <header>Ammunition</header>
+            <text>Instead of tracking each individual shot, you have an ammunition die. Roll it whenever you take a shot. If you roll a 1 or 2, the die decreases by one step. When you use the last arrow or bolt, you have run out of ammunition. </text>
+            <list>
+                <header></header>
+                <text>d12 -> d10 -> d8 -> d6 -> d4 -> 1 </text>
+            </list>
+        </subsection>
+        <subsection>
+            <header>Darkvision</header>
+            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness.</text>
+        </subsection>
+        <subsection>
+            <header>Diverse Weapons</header>
+            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness </text>
+            <list>
+                <header>Flails</header>
+                <text> gain the trait Versatile (2d4), and can do slashing or bludgeoning damage.</text>
+            </list>
+            <list>
+                <header>Morningstars</header>
+                <text> gain the trait Versatile (2d4), and can do piercing or bludgeoning damage.</text>
+            </list>
+            <list>
+                <header>War-Picks</header>
+                <text> gain the trait Versatile (2d4), and can do slashing or piercing damage.</text>
+            </list>
+            <list>
+                <header>Sickles</header>
+                <text> have the finesse trait</text>
+            </list>
+            <list>
+                <header>Tridents</header>
+                <text> (or martial spears) do 1d8 damage and have the trait Versatile (1d10)</text>
+            </list>
+            <list>
+                <header></header>
+                <text>A magic item with the thrown tag returns to your hand when thrown as a free action.</text>
+            </list>
+            <list>
+                <header></header>
+                <text>Same bonus's from magic items do not stack.</text>
+            </list>
+        </subsection>
+        <subsection>
+            <header>Dual Weilding</header>
+            <text>While dual wielding, you have +1 to AC </text>
+        </subsection>
+        <subsection>
+            <header>Flanking</header>
+            <text>When two humanoids are on opposite sides of another humanoid, the other humanoid is considered 'flanked' and has -2 AC vs melee attacks.</text>
+        </subsection>
+        <subsection>
+            <header>Unconscious</header>
+            <text>When Unconscious status ends, gain exhaustion.</text>
+        </subsection>
+        <subsection>
+            <header>Death</header>
+            <text>When revived from the dead, gain a permanent injury, unless the party succeeds a skill challenge.</text>
+        </subsection>
+        <subsection>
+            <header>Old School Undead</header>
+            <text>Healing undead instead damages them, for the maximum amount the spell or ability would do. They can make a charisma saving throw for half. The DC is 8+Proficiency+Casting stat.</text>
+        </subsection>
+        <subsection>
+            <header>Resting</header>
+            <text>Short Rests take 8 hours and long rests take one week (Relaxation Downtime Action). Short rests remove 1 stack of exhaustion, Long rests remove all stacks of exhaustion.</text>
+        </subsection>
+        <subsection>
+            <header>Healing Spirit</header>
+            <text>Grants temporary hit points instead of healing.</text>
+        </subsection>
+        <subsection>
+            <header>Summon Spells, Various</header>
+            <text>Find Familiar cannot use the help action with attacks, unless it is a warlock familiar. When summoning more than 1 creature, you instead summon a swarm. Talk to the DM before the session to get stats for a monster swarm.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>TEST of a Long Page 2</header>
+        <subsection>
+            <header>Ammunition</header>
+            <text>Instead of tracking each individual shot, you have an ammunition die. Roll it whenever you take a shot. If you roll a 1 or 2, the die decreases by one step. When you use the last arrow or bolt, you have run out of ammunition. </text>
+            <list>
+                <header></header>
+                <text>d12 -> d10 -> d8 -> d6 -> d4 -> 1 </text>
+            </list>
+        </subsection>
+        <subsection>
+            <header>Darkvision</header>
+            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness.</text>
+        </subsection>
+        <subsection>
+            <header>Diverse Weapons</header>
+            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness </text>
+            <list>
+                <header>Flails</header>
+                <text> gain the trait Versatile (2d4), and can do slashing or bludgeoning damage.</text>
+            </list>
+            <list>
+                <header>Morningstars</header>
+                <text> gain the trait Versatile (2d4), and can do piercing or bludgeoning damage.</text>
+            </list>
+            <list>
+                <header>War-Picks</header>
+                <text> gain the trait Versatile (2d4), and can do slashing or piercing damage.</text>
+            </list>
+            <list>
+                <header>Sickles</header>
+                <text> have the finesse trait</text>
+            </list>
+            <list>
+                <header>Tridents</header>
+                <text> (or martial spears) do 1d8 damage and have the trait Versatile (1d10)</text>
+            </list>
+            <list>
+                <header></header>
+                <text>A magic item with the thrown tag returns to your hand when thrown as a free action.</text>
+            </list>
+            <list>
+                <header></header>
+                <text>Same bonus's from magic items do not stack.</text>
+            </list>
+        </subsection>
+        <subsection>
+            <header>Dual Weilding</header>
+            <text>While dual wielding, you have +1 to AC </text>
+        </subsection>
+        <subsection>
+            <header>Flanking</header>
+            <text>When two humanoids are on opposite sides of another humanoid, the other humanoid is considered 'flanked' and has -2 AC vs melee attacks.</text>
+        </subsection>
+        <subsection>
+            <header>Unconscious</header>
+            <text>When Unconscious status ends, gain exhaustion.</text>
+        </subsection>
+        <subsection>
+            <header>Death</header>
+            <text>When revived from the dead, gain a permanent injury, unless the party succeeds a skill challenge.</text>
+        </subsection>
+        <subsection>
+            <header>Old School Undead</header>
+            <text>Healing undead instead damages them, for the maximum amount the spell or ability would do. They can make a charisma saving throw for half. The DC is 8+Proficiency+Casting stat.</text>
+        </subsection>
+        <subsection>
+            <header>Resting</header>
+            <text>Short Rests take 8 hours and long rests take one week (Relaxation Downtime Action). Short rests remove 1 stack of exhaustion, Long rests remove all stacks of exhaustion.</text>
+        </subsection>
+        <subsection>
+            <header>Healing Spirit</header>
+            <text>Grants temporary hit points instead of healing.</text>
+        </subsection>
+        <subsection>
+            <header>Summon Spells, Various</header>
+            <text>Find Familiar cannot use the help action with attacks, unless it is a warlock familiar. When summoning more than 1 creature, you instead summon a swarm. Talk to the DM before the session to get stats for a monster swarm.</text>
+        </subsection>
+    </section>
+</page>

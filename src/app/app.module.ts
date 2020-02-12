@@ -18,7 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatStepperModule } from '@angular/material/stepper';
-import { MatSortModule } from '@angular/material/sort';
+import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NgxXml2jsonModule } from 'ngx-xml2json';
@@ -51,7 +51,7 @@ import { EraComponent } from './era/era.component';
     MatCardModule,
     MatTabsModule,
     MatStepperModule,
-    MatSortModule,
+    MatDividerModule,
     FlexLayoutModule,
     NgxXml2jsonModule,
     LeafletModule.forRoot()
