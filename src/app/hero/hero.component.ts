@@ -12,4 +12,7 @@ export class HeroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onNavigate()  {
+    window.location.href="https://discord.gg/ykYTjps";
+  }
 }

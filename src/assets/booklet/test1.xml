@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <page>
+    <order>0</order>
     <title>Lorem Ipsum</title>
     <section>
         <header>The standard Lorem Ipsum passage, used since the 1500s</header>
