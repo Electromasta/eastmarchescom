@@ -20,7 +20,7 @@
         <div class="item item-2" fxFlex>
             <mat-tab-group animationDuration="0ms" (selectedTabChange)="tabChanged($event)" class="nav" [dynamicHeight]="true">
                 <div *ngFor="let page of pages">
-                <mat-tab label="{{page.title}}">
+                <mat-tab *ngIf="page" label="{{page.title}}">
                     <div class="main">
                         <div *ngFor="let section of page.sections">
                             <h1 id="{{section.bookmark}}">{{section.header}}</h1>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<page>
+    <order>5</order>
+    <title>Factions (Paladins)</title>
+    <section>
+        <header>Akrosi Empire Knights (Crown Paladin)</header>
+        <text>A group of knights devoted to the ideals of the empire and the aristocracy of Akros.</text>
+        <subsection>
+            <header> </header>
+            <text>Lead by the Regent Juno, in place for the children of King Henry, Alexander and Alexandra.  While the Rienlage family is the largest and most powerful, it is possible for another noble family to be voted in with the aid of their personal knights.  Each knight swears an oath backed by a geass, to the noble family and to the empire.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Order of the Azure Sky (Ancients Paladin)</header>
+        <text>A group of historians, archeologists and warriors devoted to the preservation of beauty.</text>
+        <subsection>
+            <header> </header>
+            <text>Founded by scholars of the god Nekhan in Uru-Nekhan, the faction eventually spread throughout the four corners of the world.  Since beauty is in the eye of the beholder, the Order is not as unified as they would have you believe.  Some extreme factions believe that unworthy or ugly things must be remolded or destroyed.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Sea Princes (Conquest Paladin)</header>
+        <text>Sworn to pillage and terrorize the high seas and coastline for their own power and profit.</text>
+        <subsection>
+            <header> </header>
+            <text>While the pirate code is a loose oral tradition that is generally whatever benefits the envoker at the time, the Gunforts neutrality is upheld by Kerdak Nox and his ship, Drowned Dead.  While the Sea Princes council is a tight knit community decided by power, those who are aspiring pirates are called the Razzatori di Sanguine, or Red Raiders.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Joanapur Trade Federation (Devotion Paladin)</header>
+        <text>Powerful and wealthy, the federation seeks to dominate trade on the seas.</text>
+        <subsection>
+            <header> </header>
+            <text>The Merchant Princes form an oligarchy for Joanapur, they offer protection from pirates, while also selling illicit goods themselves.  Those who belong to the federation seek to protect the federations interests overseas.  While mostly self interested, the federation does have a humanitarian streak on rare occasions. For without other settlements and people there would be no one to buy the wares.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Raven Pilgrims (Redemption Paladin)</header>
+        <text>Cloaked in black and adorned with raven feathers, these monks are sworn to keeping the peace.</text>
+        <subsection>
+            <header> </header>
+            <text>Using violence as a last resort, they believe there is good in everyone, even the most evil of people.   Led by the declining Methuselah, its numbers are few.  Legends say of warrior beastfolk who would wander the land before the time of kings, aiding travelers.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>The Wineblood Brotherhood (Vengeance Paladin)</header>
+        <text>Not merely a mercenary brotherhood for hire, the winebloods believe in paying blood debts.  An act against one is an act against all.</text>
+        <subsection>
+            <header> </header>
+            <text>Led by Epifanio, a hard bald man in a simple toga or cloak, like what a commoner would wear.  The Winebloods are commonly in charge with keeping the peace in the slums, but also act as foot soldiers for other factions.  Some of the winebloods believe that their patron diety is Aegiter, who cleanses the world of enemies who act against them.</text>
+        </subsection>
+    </section>
+</page>

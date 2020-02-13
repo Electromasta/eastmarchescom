@@ -22,21 +22,23 @@ export class NavComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
   private headers = new HttpHeaders(); 
   private testFile = 'assets/booklet/index.xml';
-  pages: Array<Page> = new Array<Page>();
+  pages: Array<Page>;
   bookmark: Page;
 
   constructor(private viewportScroller: ViewportScroller, private navService: NavService, private http: HttpClient, private ngxXml2jsonService: NgxXml2jsonService) {
+    this.viewportScroller.setOffset([0, 64]);
     this.headers = this.headers.append('Content-Type', 'text/xml'); 
     this.headers = this.headers.append('Accept', 'text/xml');
 
     this.http.get(this.testFile, {responseType: 'text'}).subscribe(data => {
+      this.pages = new Array<Page>(this.read(data)['files'].file.length);
       this.read(data)['files'].file.forEach(i => {
         this.http.get('assets/booklet/' + i + '.xml', {responseType: 'text'}).subscribe(data => {
-          this.pages.push(this.parse(this.read(data), i));
+          var json = this.read(data);
+          this.pages.splice(parseInt(json['page'].order, 10), 1, this.parse(json, i));
         });
       });
     });
-    this.pages = this.pages.sort((x, y) => x.order - y.order);
   }
 
   ngOnInit()  {
@@ -100,7 +102,7 @@ export class NavComponent implements OnInit {
       bookmark++;
     });
     
-    var page = new Page(json.page.order, json.page.title, sections);
+    var page = new Page(Number(json.page.order), json.page.title, sections);
     return page;
   }
 
@@ -115,13 +117,13 @@ export class NavComponent implements OnInit {
 
   tabChanged(tabChangeEvent: MatTabChangeEvent)  {
     this.pages.forEach(page => {
-      if (page.order == tabChangeEvent.index)
+      if (page.order == tabChangeEvent.index) {
         this.bookmark = page
+      }
     });
   }
 
   onBMClick(event, id) {
-    console.log(id);
     if (id != "#")
       this.viewportScroller.scrollToAnchor(id.bookmark);
     else
