@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <files>
+    <file>landing</file>
     <file>general</file>
-    <file>test2</file>
-    <file>test3</file>
+    <file>races</file>
+    <file>classes</file>
+    <file>feats</file>
+    <file>factions</file>
+    <file>pantheon</file>
+    <file>evergreen</file>
 </files>

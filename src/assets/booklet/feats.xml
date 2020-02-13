@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<page>
+    <order>4</order>
+    <title>Feats and Fighting Styles</title>
+    <section>
+        <header>Feats</header>
+        <subsection>
+            <header>Dual Wielder (Requires: 13 Strength or 13 Dexterity)</header>
+            <text>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one. When you engage in two-weapon fighting, you can make your additional attack with your offhand weapon as part of a Standard Action Attack or a Reaction Action Attack, but no longer with a bonus action attack. </text>
+        </subsection>
+        <subsection>
+            <header>Elvish Accuracy</header>
+            <text>Does not grant +1 to a stat</text>
+        </subsection>
+        <subsection>
+            <header>Grappler / Tavern Brawler</header>
+            <text>These feats are merged </text>
+        </subsection>
+        <subsection>
+            <header>Heavy Armor Master</header>
+            <text>Reduces all physical damage by half your proficiency bonus (rounded up) when wearing heavy armor </text>
+        </subsection>
+        <subsection>
+            <header>Martial Adapt (Requires: Requires either 13 Strength or Dexterity)</header>
+            <text> </text>
+        </subsection>
+        <subsection>
+            <header>Martial Initiate (Requires: Proficiency in at least one martial weapon)</header>
+            <text>+1 to Strength, Dexterity, or Constitution.  Learn a Fighting Style</text>
+        </subsection>
+        <subsection>
+            <header>Polearm Master (Requires: 13 Dexterity)</header>
+            <text> </text>
+        </subsection>
+        <subsection>
+            <header>Sentinel (Requires: 13 Strength)</header>
+            <text> </text>
+        </subsection>
+        <subsection>
+            <header>Sharpshooter (Requires: Requires 13 Dexterity)</header>
+            <text>Instead of -5 attack +10 damage, it is -(Proficiency) attack and +(Proficiency) damage </text>
+        </subsection>
+        <subsection>
+            <header>Great Weapon Master (Requires: Requires 13 Strength)</header>
+            <text>Instead of -5 attack +10 damage, it is -(Proficiency) attack and +(Proficiency) damage </text>
+        </subsection>
+        <subsection>
+            <header>Heavy Toss (Requires: Requires 13 Strength)</header>
+            <text>Attacking at long range with a thrown weapon doesn't impose disadvantage on your ranged weapon attack rolls. Your thrown weapons ignore half cover and three-quarters cover. If you throw a weapon at standard range, add half your proficiency bonus (rounded up) to damage</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Fighting Styles</header>
+        <subsection>
+            <header>Marksmanship</header>
+            <text>You ignore the loading quality of crossbows and firearms with which you are proficient. Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls. You gain a +1 to Attack Rolls with crossbows and firearms </text>
+        </subsection>
+        <subsection>
+            <header>Great Weapon Fighting</header>
+            <text>Gives you the savage attacker feat </text>
+        </subsection>
+        <subsection>
+            <header>Weapon Throw Fighting</header>
+            <text>You have a +1 to Attack and Damage with weapons that have the Thrown tag, and can treat them as if they had the ammunition tag </text>
+        </subsection>
+        <subsection>
+            <header>Two Weapon Fighting</header>
+            <text>When you engage in two-weapon fighting, your weapons do not need to be light, and you add your ability modifier to the offhand damage. </text>
+        </subsection>
+        <subsection>
+            <header>Tactician</header>
+            <text>You learn a maneuver of your choice from the battlemaster archetype, and one superiority dice, which is a d4, unless you have dice that are higher.</text>
+        </subsection>
+    </section>
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<page>
+    <order>0</order>
+    <title>World and Starter Adventures</title>
+    <section>
+        <header>Westmarches Style Campaign</header>
+        <text>Players organize games by writing up their goal and organizing like minded individuals with similar level characters. The length, difficulty and average rewards of a quest depends on how difficult the DM determines the task to be, and would be posted before the start of the game. Scouting an area could be a one shot, acquiring items or influence could be a couple games, and upsetting the status quo could be a campaign to itself. </text>
+        <subsection>
+            <header>Experience Points (XP)</header>
+            <text>XP are given out at the end of a quest, usually 2-6 points. To level, you need to spend XP equal to your proficiency bonus while taking a long rest while reflecting on your past adventures.</text>
+        </subsection>
+        <subsection>
+            <header>Downtime Weeks</header>
+            <text>Downtime Weeks are a resource given out at the end of a quest for use in various downtime activities. (Xanathars Guide to Everything).  For example, trading out a magic item you don't like for one on the evergreen list.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Chargen</header>
+        <text>Use standard 27 point buy.  Use races available from the races page and any relevant houserules.  Valid books are PHB, SCAG, XGTE, or Artificer UA.  In addition to regular equipment rules, pick a trinket from PHB page 159.</text>
+    </section>
+    <section>
+        <header>Shipwrecked on an Island</header>
+        <text>The shipwreck adventure takes place on a random island in the Shackles.  Characters will need a reason to be aboard a ship.</text>
+    </section>
+    <section>
+        <header>Fight in the Arena</header>
+        <text>The Colosseum aventure takes place in the capital of Akros.  The players will need a reason for being in captivity, so pick either a real crime or a crime you've been falsely accused of.</text>
+    </section>
+</page>
