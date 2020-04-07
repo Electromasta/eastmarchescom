@@ -8,17 +8,17 @@
             <header>Ammunition</header>
             <text>Instead of tracking each individual shot, you have an ammunition die. Roll it whenever you take a shot. If you roll a 1 or 2, the die decreases by one step. When you use the last arrow or bolt, you have run out of ammunition. </text>
             <list>
-                <header></header>
+                <header>Step Die</header>
                 <text>d12 -> d10 -> d8 -> d6 -> d4 -> 1 </text>
             </list>
         </subsection>
         <subsection>
             <header>Darkvision</header>
-            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness.</text>
+            <text>For 60 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness.</text>
         </subsection>
         <subsection>
             <header>Diverse Weapons</header>
-            <text>For 30 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness </text>
+            <text> The following changes have been made to make some underused weapons more interesting</text>
             <list>
                 <header>Flails</header>
                 <text> gain the trait Versatile (2d4), and can do slashing or bludgeoning damage.</text>
@@ -40,11 +40,11 @@
                 <text> (or martial spears) do 1d8 damage and have the trait Versatile (1d10)</text>
             </list>
             <list>
-                <header></header>
+                <header>Throw Weapon Quality of Life</header>
                 <text>A magic item with the thrown tag returns to your hand when thrown as a free action.</text>
             </list>
             <list>
-                <header></header>
+                <header>Anti Munchkin Ward</header>
                 <text>Same bonus's from magic items do not stack.</text>
             </list>
         </subsection>
@@ -55,6 +55,10 @@
         <subsection>
             <header>Flanking</header>
             <text>When two humanoids are on opposite sides of another humanoid, the other humanoid is considered 'flanked' and has -2 AC vs melee attacks.</text>
+        </subsection>
+		<subsection>
+            <header>Westmarches 'can become lost' clause</header>
+            <text>Any time a feature states that a character cannot be lost, you should replace it with the following: When you are in the wilderness, you can at any time retrace your steps exactly the way you came, until you return to the Town. Once you return to the Town, this ability resets.</text>
         </subsection>
         <subsection>
             <header>Unconscious</header>

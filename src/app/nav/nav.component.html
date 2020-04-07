@@ -28,6 +28,11 @@
                             <div *ngFor="let subsection of section.subsections">
                                 <h4><strong>{{subsection.header}}</strong></h4>
                                 <p *ngIf="subsection.text">{{subsection.text}}</p>
+                                <div *ngIf="subsection.list.length > 0">
+                                    <ul>
+                                        <li *ngFor="let point of subsection.list"><strong>{{point.header}}</strong>   {{point.text}}</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div *ngIf="section.list.length > 0">
                                 <ul>

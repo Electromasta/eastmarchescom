@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<page>
+    <order>5</order>
+    <title>Cultural Centers</title>
+    <section>
+        <header>Akros</header>
+        <text>Akros is the seat of power of an empire, where contracts and loyalty are enforced with geas magic. Noble houses play games of power using the merchants, peasants and their chosen champions.</text>
+        <subsection>
+            <header>Demographics</header>
+            <text>Dwarves: 55% Humans: 35% Other: 10%</text>
+        </subsection>
+        <subsection>
+            <header>Government</header>
+            <text>Aristocracy based on noble families with the backing of knights and an elected emperor with limited powers.</text>
+        </subsection>
+        <subsection>
+            <header>Currency</header>
+            <text>Uses Denarii and Empire Crowns.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Joanapur</header>
+        <text>Joanapur is a city on a chain of islands, where laws are more of suggestions, gangs and pirates roam unchecked, and the majority of people live in slums.</text>
+        <subsection>
+            <header>Demographics</header>
+            <text>Human: 60% Elves: 15% Other: 25%</text>
+        </subsection>
+        <subsection>
+            <header>Government</header>
+            <text>Merchant Oligarchy</text>
+        </subsection>
+        <subsection>
+            <header>Currency</header>
+            <text>Use Silver Pesce and Silver Serpents</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Ravenwatch and Pennsyltucky</header>
+        <text>Ravenwatch is a town in the empire surrounded by forests on all sides. The monks of the abbey preach nonviolent passivism.   Pennsyltucky is a region comprised of several towns and homesteads, each with a local ruling family known for particular fighting styles. </text>
+        <subsection>
+            <header>Demographics</header>
+            <text>Human: 45% Beastfolk: 20% Dwarf: 20% Giant: 10% Other: 5%</text>
+        </subsection>
+        <subsection>
+            <header>Government</header>
+            <text>Nobles and Sherifs</text>
+        </subsection>
+        <subsection>
+            <header>Currency</header>
+            <text>Uses Denarii and Empire Crowns, though some people still use Raven Eyes</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Saltmarsh and Seaton</header>
+        <text>Saltmarsh is a fishing town. Whether or not the town is a part of the empire depends on who you ask, and is a very controversial subject. </text>
+        <subsection>
+            <header>Demographics</header>
+            <text>Humans: 75% Tritons: 15% Other: 10%</text>
+        </subsection>
+        <subsection>
+            <header>Government</header>
+            <text>Demarchy City State</text>
+        </subsection>
+        <subsection>
+            <header>Currency</header>
+            <text>While they are pressured to use Empire Crowns, Saltmarsh is fiercely committed to using Silver Serpents as an act of defiance.</text>
+        </subsection>
+    </section>
+    <section>
+        <header>Uru-Bhast and Uru-Nekhan</header>
+        <text>The Twin Cities, Uru-Bhast and Uru-Nekhan, rebuilt by Gadea the Great in honor the sons of the diety Muru.</text>
+        <subsection>
+            <header>Demographics</header>
+            <text>Humans: 50% Triton: 30% Other: 20%</text>
+        </subsection>
+        <subsection>
+            <header>Government</header>
+            <text>Divine Monarchy</text>
+        </subsection>
+        <subsection>
+            <header>Currency</header>
+            <text>Bank Note Tablets made of Papyrus, Clay, Ivory, Gold, and more.</text>
+        </subsection>
+    </section>
+</page>
