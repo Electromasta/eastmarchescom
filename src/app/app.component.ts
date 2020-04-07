@@ -21,19 +21,20 @@ export class AppComponent {
       this.viewName = "/"
       this.showNavbar = true;
       this.showSidebarControls = false;
-    }
-    if  (this.router.url === "/nav")  {
+    } else if  (this.router.url === "/nav")  {
       this.viewName = "/nav"
       this.showNavbar = true;
       this.showSidebarControls = true;
-    }
-    if  (this.router.url === "/atlas")  {
+    } else if  (this.router.url === "/atlas")  {
       this.viewName = "/atlas"
       this.showNavbar = false;
       this.showSidebarControls = false;
-    }
-    if  (this.router.url === "/era")  {
+    } else if  (this.router.url === "/era")  {
       this.viewName = "/era"
+      this.showNavbar = true;
+      this.showSidebarControls = false;
+    } else  {
+      this.viewName = "/notfound"
       this.showNavbar = true;
       this.showSidebarControls = false;
     }

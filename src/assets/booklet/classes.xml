@@ -15,7 +15,7 @@
         </subsection>
         <subsection>
             <header>Favored Enemy</header>
-            <text>Favored Enemy deals half your proficiency rounded up to favored enemies</text>
+            <text>Favored Enemy additionally adds damage equal to half your proficiency rounded up to chosen enemies</text>
         </subsection>
         <subsection>
             <header>Beast Bond</header>

@@ -65,7 +65,13 @@ export class NavComponent implements OnInit {
 
       if (section.subsection != undefined)  {
         this.arrayify(section.subsection).forEach(subsection => {
-          subsections.push(new Subsection(subsection.header, subsection.text));
+          var sublist: Array<Subsection> = new Array<Subsection>();
+          if (subsection.list != null){
+            this.arrayify(subsection.list).forEach(list => {
+              sublist.push(new Subsection(list.header, list.text));
+            });
+          }
+          subsections.push(new Subsection(subsection.header, subsection.text, sublist));
         });
       }
 

@@ -5,6 +5,7 @@ import { AtlasComponent } from './atlas/atlas.component';
 import { NavComponent } from './nav/nav.component';
 import { HeroComponent } from './hero/hero.component';
 import { EraComponent } from './era/era.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'hero', component: HeroComponent},
   {path: 'nav', component: NavComponent},
   {path: 'atlas', component: AtlasComponent},
-  {path: 'era', component: EraComponent}
+  {path: 'era', component: EraComponent},
+  {path: '**', component: NotfoundComponent}
 ];
 
 @NgModule({

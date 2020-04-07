@@ -27,6 +27,7 @@ import { AtlasComponent } from './atlas/atlas.component';
 import { NavComponent } from './nav/nav.component';
 import { HeroComponent } from './hero/hero.component';
 import { EraComponent } from './era/era.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EraComponent } from './era/era.component';
     AtlasComponent,
     NavComponent,
     HeroComponent,
-    EraComponent
+    EraComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule,

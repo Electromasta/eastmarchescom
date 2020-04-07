@@ -48,6 +48,38 @@
             <header>Heavy Toss (Requires: Requires 13 Strength)</header>
             <text>Attacking at long range with a thrown weapon doesn't impose disadvantage on your ranged weapon attack rolls. Your thrown weapons ignore half cover and three-quarters cover. If you throw a weapon at standard range, add half your proficiency bonus (rounded up) to damage</text>
         </subsection>
+        <subsection>
+            <header>Deep Rites (Requires: Triton Race)</header>
+            <text>You learn more of the magic typical of triton. You learn the 'Speak with Animals' spell and can cast it at will, without expending a spell slot. You also learn 'Pass without Trace' and 'Speak with Plants', each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. Wisdom or Charisma is your spellcasting ability for all three spells, depending on the stat bonus you chose.</text>
+        </subsection>
+        <subsection>
+            <header>Beastfolk Evolution (Requires: Beastfolk Race)</header>
+            <text>You gain +1 to an attribute and one of the following:</text>
+        </subsection>
+        <list>
+            <header>Glide: </header>
+            <text> You have ray-like fins that you can use as wings to slow your fall or allow you to glide. When you fall and aren't incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend. </text>
+        </list>
+        <list>
+            <header>Monkey's Grip:</header>
+            <text> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal. As a bonus action, you can make an additional natural weapon attack. </text>
+        </list>
+        <list>
+            <header>Nimble: </header>
+            <text> You can take the Dash or Disengage action as a bonus action on each of your turns. </text>
+        </list>
+        <list>
+            <header>Venomous:</header>
+            <text> You gain the Acid Splash cantrip and poison resistance </text>
+        </list>
+        <list>
+            <header>Amphibious:</header>
+            <text>  You can breathe underwater and have cold resistance.</text>
+        </list>
+        <list>
+            <header>Predator:</header>
+            <text>  Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your natural weapon as a bonus action.</text>
+        </list>
     </section>
     <section>
         <header>Fighting Styles</header>
