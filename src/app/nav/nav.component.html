@@ -1,58 +1,34 @@
-<mat-sidenav-container class="nav" [hasBackdrop]="false">
-    <mat-sidenav #sidenav style="width: 250px" mode="over">
-        <div *ngIf="bookmark != null" class="navbody">
-            <div *ngFor="let section of bookmark.sections">
-                <button mat-button (click)="onBMClick($event, section)"><mat-icon>bookmark</mat-icon>{{section.header.substring(0, 18)}}</button>
-                <p *ngIf="section.text">{{section.text.substring(0, 24)}}...</p>
-                <!--<mat-divider></mat-divider>-->
-            </div>
-            <button mat-button (click)="onBMClick($event, '#')"><mat-icon>bookmark</mat-icon>Back to Top</button>
-        </div>
-    </mat-sidenav>
-
-    <div class="container navcontents"
-        fxLayout
-        fxLayout.xs="column"
-        fxLayoutAlign="center"
-        fxLayoutGap="10px"
-        fxLayoutGap.xs="0">
-        <div class="item item-1" fxFlex="15%"></div>
-        <div class="item item-2" fxFlex>
-            <mat-tab-group animationDuration="0ms" (selectedTabChange)="tabChanged($event)" class="nav" [dynamicHeight]="true">
-                <div *ngFor="let page of pages">
-                <mat-tab *ngIf="page" label="{{page.title}}">
-                    <div class="main">
-                        <div *ngFor="let section of page.sections">
-                            <h1 id="{{section.bookmark}}">{{section.header}}</h1>
-                            <p *ngIf="section.text">{{section.text}}</p>
-                            <div *ngFor="let subsection of section.subsections">
-                                <h4><strong>{{subsection.header}}</strong></h4>
-                                <p *ngIf="subsection.text">{{subsection.text}}</p>
-                                <div *ngIf="subsection.list.length > 0">
-                                    <ul>
-                                        <li *ngFor="let point of subsection.list"><strong>{{point.header}}</strong>   {{point.text}}</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div *ngIf="section.list.length > 0">
-                                <ul>
-                                    <li *ngFor="let point of section.list"><strong>{{point.header}}</strong>   {{point.text}}</li>
-                                </ul>
-                            </div>
-                            <table *ngIf="section.table != undefined">
-                                <tr>
-                                    <th *ngFor="let column of section.table.columns">{{column}}</th>
-                                </tr>
-                                <tr *ngFor="let row of section.table.rows">
-                                    <td *ngFor="let cell of row.cells">{{cell}}</td>
-                                </tr>
-                            </table>
-                        </div>
+<div fxFlex="15%" fxFlex.md="5%" fxFlex.sm="2%" fxFlex.xs="2%"></div><div fxFlex="70%" fxFlex.md="90%" fxFlex.sm="96%" fxFlex.xs="96%" class="main">
+    <mat-tab-group animationDuration="0ms" (selectedTabChange)="tabChanged($event)" [dynamicHeight]="true">
+        <div *ngFor="let page of pages">
+        <mat-tab *ngIf="page" label="{{page.title}}" >
+            <div *ngFor="let section of page.sections">
+                <h1 id="{{section.bookmark}}">{{section.header}}</h1>
+                <p *ngIf="section.text">{{section.text}}</p>
+                <div *ngFor="let subsection of section.subsections">
+                    <h4><strong>{{subsection.header}}</strong></h4>
+                    <p *ngIf="subsection.text">{{subsection.text}}</p>
+                    <div *ngIf="subsection.list.length > 0">
+                        <ul>
+                            <li *ngFor="let point of subsection.list"><strong>{{point.header}}</strong>   {{point.text}}</li>
+                        </ul>
                     </div>
-                </mat-tab>
                 </div>
-            </mat-tab-group>
+                <div *ngIf="section.list.length > 0">
+                    <ul>
+                        <li *ngFor="let point of section.list"><strong>{{point.header}}</strong>   {{point.text}}</li>
+                    </ul>
+                </div>
+                <table *ngIf="section.table != undefined">
+                    <tr>
+                        <th *ngFor="let column of section.table.columns">{{column}}</th>
+                    </tr>
+                    <tr *ngFor="let row of section.table.rows">
+                        <td *ngFor="let cell of row.cells">{{cell}}</td>
+                    </tr>
+                </table>
+            </div>
+        </mat-tab>
         </div>
-        <div class="item item-3" fxFlex="15%"></div>
-    </div>
-</mat-sidenav-container>
+    </mat-tab-group>
+</div><div fxFlex="15%" fxFlex.md="5%" fxFlex.sm="2%" fxFlex.xs="2%"></div>

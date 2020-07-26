@@ -5,14 +5,6 @@
     <section>
         <header>General Rules</header>
         <subsection>
-            <header>Ammunition</header>
-            <text>Instead of tracking each individual shot, you have an ammunition die. Roll it whenever you take a shot. If you roll a 1 or 2, the die decreases by one step. When you use the last arrow or bolt, you have run out of ammunition. </text>
-            <list>
-                <header>Step Die</header>
-                <text>d12 -> d10 -> d8 -> d6 -> d4 -> 1 </text>
-            </list>
-        </subsection>
-        <subsection>
             <header>Darkvision</header>
             <text>For 60 ft. around you, you can see in dim light as if it were bright light. You cannot see in total darkness.</text>
         </subsection>
@@ -43,10 +35,18 @@
                 <header>Throw Weapon Quality of Life</header>
                 <text>A magic item with the thrown tag returns to your hand when thrown as a free action.</text>
             </list>
-            <list>
-                <header>Anti Munchkin Ward</header>
-                <text>Same bonus's from magic items do not stack.</text>
-            </list>
+        </subsection>
+        <subsection>
+            <header>Bash Skill (Strength)</header>
+            <text>Your Strength (Bash) check covers situations where you would like to break or disable various structures.  Breaking simple locks, opening doors, bending bars, and even ‘disabling’ traps can be accomplished, depending on the material in question.  Failing a Bash check comes with an added liability of making locks and doors inoperable, and setting off traps you intended to disable.</text>
+        </subsection>
+        <subsection>
+            <header>Disarm Action</header>
+            <text>Using the Attack action, you can make a special melee attack to Disarm a creature, either to knock the weapon away from it or to sunder the item completely (beat the contest by 10). If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
+                The target of your disarm must be no more than one size larger than you, and it must be within your reach. You make a Strength (Bash) check contested by the target's Strength (Bash) or Dexterity (Acrobatics) check (the target chooses the ability to use). You succeed automatically if the target is incapacitated. If you succeed, you knock the weapon 10 feet away from you, or sunder if you beat the contest by 10.  A Sundered Weapon cannot be used until it is fixed.
+
+                Special:  To sunder a magical item, the item in question must also be magical of an equal bonus or higher.  A +1 flametongue longsword cannot sunder a +2 dagger.
+            </text>
         </subsection>
         <subsection>
             <header>Dual Weilding</header>
@@ -86,51 +86,7 @@
         </subsection>
     </section>
     <section>
-        <header>Deadfire Initiative</header>
-        <text>Each round, declare your action, and roll initiative based on that action. If you decide to change your action, you got last. Roll 1d10 + a number based on action. On a tie, the action with the longest reach/range wins.</text>
-        <list>
-            <header>Attack:</header>
-            <text>+Dice / 2 (so a dagger is +2, greatsword is +6)</text>
-        </list>
-        <list>
-            <header>Cast:</header>
-            <text>+2 +Spell Level</text>
-        </list>
-        <list>
-            <header>Dash/Disengage/Dodge/Help/Hide/Search:</header>
-            <text>+3</text>
-        </list>
-        <list>
-            <header>Ready an Action:</header>
-            <text>Uses the same bonus as the action would have been, or +3/Dm Decides</text>
-        </list>
-        <list>
-            <header>Use an Object:</header>
-            <text>Uses the same bonus the object emulates, or +3/Dm Decides</text>
-        </list>
-    </section>
-    <section>
-        <header>Encumbrance</header>
-        <text>Inventory is managed by abstract item slots. Characters have item slots equal to 10+ their total strength score. In addition to these slots, characters carry for free one ration box, one waterskin, and one coin purse, enough for 5 days of travel and 100 coins. Some items potentially are even heavier than large on account of weight and/or bulkiness. For example, Leather armor takes up 4 slots, Medium armor takes up 6 slots, and Heavy armor takes up 8 spots. </text>
-        <list>
-            <header>Inconsequential: </header>
-            <text>Items like hats, gloves, bracers ect are considered part of the armor weight</text>
-        </list>
-        <list>
-            <header>Tiny(0.2 Slots): </header>
-            <text>Fingerspan, can hold many in one hand</text>
-        </list>
-        <list>
-            <header>Hand(1 Slot): </header>
-            <text>Handspan, can be comfortably held in one hand</text>
-        </list>
-        <list>
-            <header>Medium(2 Slots): </header>
-            <text>Armspan, can be held in one hand</text>
-        </list>
-        <list>
-            <header>Large(3 Slots): </header>
-            <text>Longer than Armspan, requires two hands to hold</text>
-        </list>
+        <header>Cinematic Initiative (Needs Testing)</header>
+        <text>Each round, each player declares their action, and roll attacks, skills, or other rolls determined by the DM- simultaniously.  The d20 rolls are considered their initiative for that round, and combat resolves in that order.  If there are more than one d20 rolls, use the first one.</text>
     </section>
 </page>

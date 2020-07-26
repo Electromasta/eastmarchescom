@@ -1,9 +1,8 @@
-<mat-toolbar color="primary" fxLayout fxLayout.xs="row" [hidden]="!showNavbar">
-    <span fxFlex="16%"><button mat-icon-button (click)="toggleSidebar()" [hidden]="!showSidebarControls"><mat-icon>menu</mat-icon></button></span>
-    <span class="home" routerLink="/">The Eastmarches</span>
-    <span fxFlex></span>
+<mat-toolbar color="primary" [hidden]="!showNavbar">
+    <span fxFlex fxFlexOffset="15%" fxFlexOffset.md="5%" fxFlexOffset.sm="2%" fxFlexOffset.xs="2%" routerLink="/"><div class="home">The Eastmarches</div></span>
+    <div fxFlex="70%" fxFlex.md="90%" fxFlex.sm="96%" fxFlex.xs="96%"></div>
     <button mat-button routerLink="/atlas"><span>Atlas</span><mat-icon>public</mat-icon></button>
-    <span fxFlex="17%"></span>
+    <div fxFlex fxFlexOffset="15%" fxFlexOffset.md="5%" fxFlexOffset.sm="2%" fxFlexOffset.xs="2%"></div>
 </mat-toolbar>
 
 <button mat-raised-button routerLink="/" style="position: absolute; top: 10px; right: 10px; z-index: 9999;" [hidden]="showNavbar"><mat-icon>arrow_back</mat-icon></button>

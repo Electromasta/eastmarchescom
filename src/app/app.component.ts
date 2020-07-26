@@ -12,7 +12,6 @@ export class AppComponent {
   viewName = ' /';
   showNavbar = false;
   showSidebar = false;
-  showSidebarControls = false;
 
   constructor(private router: Router, private navService: NavService) {};
 
@@ -20,23 +19,18 @@ export class AppComponent {
     if  (this.router.url === "/" || this.router.url === "/hero")  {
       this.viewName = "/"
       this.showNavbar = true;
-      this.showSidebarControls = false;
     } else if  (this.router.url === "/nav")  {
       this.viewName = "/nav"
       this.showNavbar = true;
-      this.showSidebarControls = true;
     } else if  (this.router.url === "/atlas")  {
       this.viewName = "/atlas"
       this.showNavbar = false;
-      this.showSidebarControls = false;
     } else if  (this.router.url === "/era")  {
       this.viewName = "/era"
       this.showNavbar = true;
-      this.showSidebarControls = false;
     } else  {
       this.viewName = "/notfound"
       this.showNavbar = true;
-      this.showSidebarControls = false;
     }
   }
 
