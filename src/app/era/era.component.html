@@ -1,41 +1,30 @@
-<div class="container"
-    fxLayout
-    fxLayout.xs="column"
-    fxLayoutAlign="center"
-    fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
-    <div class="item item-1" fxFlex="15%"></div>
-    <div class="item item-2" fxFlex>
-        <div class="main hero">
-            <mat-vertical-stepper [linear]="false" #stepper>
-                <mat-step>
-                    <ng-template matStepLabel>Time of Giants</ng-template>
-                    <p>Not much is known about this period. Giants ruled the land, and the Titans guarded the secrets of fire jealously. Mist and Sand obscured the land, and heat was drawn from deep in the earth.</p>
-                </mat-step>
-                <mat-step>
-                    <ng-template matStepLabel>Age of Fire</ng-template>
-                    <p>Elves, Dwarves appeared in records. Small giants, known as Pygmies, began spreading out across the land. The pygmies stole the fire from the titans and became the first gods, but as a final act of vengeance, the titan who helped them was shattered into pieces. Or so it is said.</p>
-                </mat-step>
-                <mat-step>
-                    <ng-template matStepLabel>Age of Heroes</ng-template>
-                    <p>An Age of great turbulence and change, where individual people had great sway over the fates of history, historians now refer to as 'Age of Heroes'.</p>
-                </mat-step>
-                <mat-step>
-                    <ng-template matStepLabel>Brass Age</ng-template>
-                    <p>Humans and Dwarves became more numerous races, and kingdoms rose and fell. Akros discovered the ability to make brass, and quickly used it to achieve military supremacy, creating the first unified empire of "all the known world."  This empire still lasts to this day, although it has lost much of its sea fairing territory.</p>
-                    <!--<mat-card class="card" routerLink="/atlas">
-                        <img mat-card-image src="assets/images/hero1.png" alt="Atlas of the World">
-                        <mat-card-content class="cardtext">
-                            Atlas of the World
-                        </mat-card-content>
-                    </mat-card>-->
-                </mat-step>
-                <mat-step>
-                    <ng-template matStepLabel>Age of Brine and Iron</ng-template>
-                    <p>The current age, in which seafaring, iron, and gunpowder have become commonplace.</p>
-                </mat-step>
-            </mat-vertical-stepper>
-        </div>
-    </div>
-    <div class="item item-1" fxFlex="15%"></div>
-</div>
+<div fxFlex="15%" fxFlex.md="5%" fxFlex.sm="2%" fxFlex.xs="2%"></div><div fxFlex fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="space-evenly center" fxLayoutGap="15px" class="main">
+    <mat-vertical-stepper [linear]="false" #stepper>
+        <mat-step>
+            <ng-template matStepLabel>Time of Giants</ng-template>
+            <p>Not much is known about this period. Giants ruled the land, and the Titans guarded the secrets of fire jealously. Mist and Sand obscured the land, and heat was drawn from deep in the earth.</p>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Age of Fire</ng-template>
+            <p>Elves, Dwarves appeared in records. Small giants, known as Pygmies, began spreading out across the land. The pygmies stole the fire from the titans and became the first gods, but as a final act of vengeance, the titan who helped them was shattered into pieces. Or so it is said.</p>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Age of Heroes</ng-template>
+            <p>An Age of great turbulence and change, where individual people had great sway over the fates of history, historians now refer to as 'Age of Heroes'.</p>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Brass Age</ng-template>
+            <p>Humans and Dwarves became more numerous races, and kingdoms rose and fell. Akros discovered the ability to make brass, and quickly used it to achieve military supremacy, creating the first unified empire of "all the known world."  This empire still lasts to this day, although it has lost much of its sea fairing territory.</p>
+            <!--<mat-card class="card" routerLink="/atlas">
+                <img mat-card-image src="assets/images/hero1.png" alt="Atlas of the World">
+                <mat-card-content class="cardtext">
+                    Atlas of the World
+                </mat-card-content>
+            </mat-card>-->
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Age of Brine and Iron</ng-template>
+            <p>The current age, in which seafaring, iron, and gunpowder have become commonplace.</p>
+        </mat-step>
+    </mat-vertical-stepper>
+</div><div fxFlex="15%" fxFlex.md="5%" fxFlex.sm="2%" fxFlex.xs="2%"></div>

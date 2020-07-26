@@ -89,7 +89,7 @@
         </subsection>
         <subsection>
             <header>Great Weapon Fighting</header>
-            <text>Gives you the savage attacker feat </text>
+            <text>When you make an attack with a melee weapon that you are wielding with two hands, you also deal your strength bonus in damage to another target that is adjecent to both you and your main target, as long as the attack roll value would also hit the additional targets AC.  This damage is not an attack and cannot be increased by crit damage or riders.</text>
         </subsection>
         <subsection>
             <header>Weapon Throw Fighting</header>

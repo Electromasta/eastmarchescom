@@ -26,4 +26,16 @@
         <header>Fight in the Arena</header>
         <text>The Colosseum aventure takes place in the capital of Akros.  The players will need a reason for being in captivity, so pick either a real crime or a crime you've been falsely accused of.</text>
     </section>
+    <section>
+        <header>Dwarven Excavation</header>
+        <text>In the stead of fighting in a colosseum in the capital, the players have signed up the work in the mines.  However, things don't go as planned as many of the miners have disappeared of late.</text>
+    </section>
+    <section>
+        <header>Mephit Mischeif</header>
+        <text>As outsiders to Saltmarsh, they have become falsely accused of theivery.  One person is willing to believe them, but he can only help them help themselves.</text>
+    </section>
+    <section>
+        <header>Six Feet Under</header>
+        <text>You wake up in a cold place, surrounded by stone, with only dwindling stale air to conserve.  Just as you are about to sufficate, you start to hear gibbering and the scraping of stone on stone...</text>
+    </section>
 </page>
