@@ -85,8 +85,4 @@
             <text>Find Familiar cannot use the help action with attacks, unless it is a warlock familiar. When summoning more than 1 creature, you instead summon a swarm. Talk to the DM before the session to get stats for a monster swarm.</text>
         </subsection>
     </section>
-    <section>
-        <header>Cinematic Initiative (Needs Testing)</header>
-        <text>Each round, each player declares their action, and roll attacks, skills, or other rolls determined by the DM- simultaniously.  The d20 rolls are considered their initiative for that round, and combat resolves in that order.  If there are more than one d20 rolls, use the first one.</text>
-    </section>
 </page>
