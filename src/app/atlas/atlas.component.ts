@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { tileLayer, latLng, CRS, marker, FeatureGroup, featureGroup, DrawEvents, LatLngBounds, Transformation, FitBoundsOptions, Util } from 'leaflet';
+import { tileLayer, latLng, CRS, marker, FeatureGroup, featureGroup, DrawEvents, LatLngBounds, Transformation, FitBoundsOptions, Util, Polyline } from 'leaflet';
 
 @Component({
   selector: 'app-atlas',
@@ -70,7 +70,19 @@ export class AtlasComponent implements OnInit {
 	};
 
   public onDrawCreated(e: any) {
-    this.drawnItems.addLayer((e as DrawEvents.Created).layer);
+    var layer = (e as DrawEvents.Created).layer;
+    if (layer instanceof Polyline) {
+      var distance = 0;
+      console.log(layer);
+      var points = layer.getLatLngs();
+      console.log(points);
+      //for (var i = 0; i < points.length-1; i++) {
+      //  distance += points[i].distanceTo(points[i+1]);
+      //}
+      layer.bindPopup("test");
+    }
+    
+    this.drawnItems.addLayer(layer);
   }
 
 }
