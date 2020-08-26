@@ -25,6 +25,9 @@ export class AppComponent {
     } else if  (this.router.url === "/atlas")  {
       this.viewName = "/atlas"
       this.showNavbar = false;
+    } else if  (this.router.url === "/hyland")  {
+      this.viewName = "/hyland"
+      this.showNavbar = false;
     } else if  (this.router.url === "/era")  {
       this.viewName = "/era"
       this.showNavbar = true;

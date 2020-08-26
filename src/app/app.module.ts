@@ -21,6 +21,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { LeafletDrawModule } from '@asymmetrik/ngx-leaflet-draw';
 import { NgxXml2jsonModule } from 'ngx-xml2json';
 
 import { AtlasComponent } from './atlas/atlas.component';
@@ -28,6 +29,7 @@ import { NavComponent } from './nav/nav.component';
 import { HeroComponent } from './hero/hero.component';
 import { EraComponent } from './era/era.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { HylandmapComponent } from './hylandmap/hylandmap.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     NavComponent,
     HeroComponent,
     EraComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HylandmapComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule,
@@ -56,6 +59,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     MatDividerModule,
     FlexLayoutModule,
     NgxXml2jsonModule,
+    LeafletDrawModule,
     LeafletModule.forRoot()
   ],
   providers: [],
