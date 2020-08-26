@@ -1,9 +1,8 @@
 <div style="height: 100%;"
     leaflet leafletDraw
     [leafletOptions]="leafoptions"
-    [leafletDrawOptions]="drawOptions"
-    [leafletLayers]="layers"
     (leafletClick)="onClick($event)"
+    [leafletDrawOptions]="drawOptions"
     (leafletDrawCreated)="onDrawCreated($event)">
-    <div [leafletLayer]="drawnItems"></div>
+    <div [leafletLayer]="drawnItems"></div>>
 </div>

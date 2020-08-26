@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AtlasComponent } from './atlas/atlas.component';
+import { HylandmapComponent } from './hylandmap/hylandmap.component';
 import { NavComponent } from './nav/nav.component';
 import { HeroComponent } from './hero/hero.component';
 import { EraComponent } from './era/era.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'hero', component: HeroComponent},
   {path: 'nav', component: NavComponent},
   {path: 'atlas', component: AtlasComponent},
+  {path: 'hyland', component: HylandmapComponent},
   {path: 'era', component: EraComponent},
   {path: '**', component: NotfoundComponent}
 ];
