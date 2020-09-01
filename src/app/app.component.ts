@@ -28,6 +28,21 @@ export class AppComponent {
     } else if  (this.router.url === "/hyland")  {
       this.viewName = "/hyland"
       this.showNavbar = false;
+    } else if  (this.router.url === "/hool")  {
+      this.viewName = "/hool"
+      this.showNavbar = false;
+    } else if  (this.router.url === "/farnorth")  {
+      this.viewName = "/farnorth"
+      this.showNavbar = false;
+    } else if  (this.router.url === "/mulan")  {
+      this.viewName = "/mulan"
+      this.showNavbar = false;
+    } else if  (this.router.url === "/shackles")  {
+      this.viewName = "/shackles"
+      this.showNavbar = false;
+    } else if  (this.router.url === "/stolen")  {
+      this.viewName = "/stolen"
+      this.showNavbar = false;
     } else if  (this.router.url === "/era")  {
       this.viewName = "/era"
       this.showNavbar = true;

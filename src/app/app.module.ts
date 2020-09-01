@@ -29,7 +29,19 @@ import { NavComponent } from './nav/nav.component';
 import { HeroComponent } from './hero/hero.component';
 import { EraComponent } from './era/era.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { HylandmapComponent } from './hylandmap/hylandmap.component';
+import { HylandmapComponent } from './hex/hylandmap/hylandmap.component';
+import { HoolComponent } from './hex/hool/hool.component';
+import { MulanComponent } from './hex/mulan/mulan.component';
+import { ShacklesComponent } from './hex/shackles/shackles.component';
+import { StolenComponent } from './hex/stolen/stolen.component';
+import { FarnorthComponent } from './hex/farnorth/farnorth.component';
+import { AkrosComponent } from './civ/akros/akros.component';
+import { BeaumereComponent } from './civ/beaumere/beaumere.component';
+import { JoanapurComponent } from './civ/joanapur/joanapur.component';
+import { RavenwatchComponent } from './civ/ravenwatch/ravenwatch.component';
+import { TwincitiesComponent } from './civ/twincities/twincities.component';
+import { SaltmarshComponent } from './civ/saltmarsh/saltmarsh.component';
+import { PhandalinComponent } from './civ/phandalin/phandalin.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +51,19 @@ import { HylandmapComponent } from './hylandmap/hylandmap.component';
     HeroComponent,
     EraComponent,
     NotfoundComponent,
-    HylandmapComponent
+    HylandmapComponent,
+    HoolComponent,
+    MulanComponent,
+    ShacklesComponent,
+    StolenComponent,
+    FarnorthComponent,
+    AkrosComponent,
+    BeaumereComponent,
+    JoanapurComponent,
+    RavenwatchComponent,
+    TwincitiesComponent,
+    SaltmarshComponent,
+    PhandalinComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule,
