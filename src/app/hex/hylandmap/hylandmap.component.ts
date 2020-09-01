@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { tileLayer, latLng, CRS, marker, FeatureGroup, featureGroup, DrawEvents, Transformation, Util } from 'leaflet';
+import { tileLayer, latLng, CRS, marker, FeatureGroup, featureGroup, DrawEvents, LatLngBounds, Transformation, FitBoundsOptions, Util, Polyline, LatLng } from 'leaflet';
 
 @Component({
   selector: 'app-hylandmap',
@@ -21,8 +21,8 @@ export class HylandmapComponent implements OnInit {
     }),
     zoom: 0,
     minZoom: 0,
-    maxZoom: 2,
-    center: latLng(-500, 500),
+    maxZoom: 1,
+    center: latLng(961677, 1029196),
     noWrap: true,
     attributionControl: false
   };
@@ -38,7 +38,6 @@ export class HylandmapComponent implements OnInit {
     position: 'bottomleft',
     draw: {
       polyline: { showLength: true, metric: false, feet: false },
-      polygon: { showArea: true, metric: false, feet: false },
       rectangle: false
     },
     edit: {
@@ -46,17 +45,25 @@ export class HylandmapComponent implements OnInit {
     }
   };
 
-  drawLocal: any = {
-		draw: {
-			toolbar: {
-				buttons: {
-					polygon: 'Draw an awesome polygon!'
-				}
-			}
-		}
-	};
-
   public onDrawCreated(e: any) {
-    this.drawnItems.addLayer((e as DrawEvents.Created).layer);
+    var layer = (e as DrawEvents.Created).layer;
+    if (layer instanceof Polyline) {
+      var distance = 0;
+      var points = layer.getLatLngs();
+      for (var i = 0; i < points.length-1; i++) {
+        distance += this.distanceTo(points[i]["lat"], points[i]["lng"], points[i+1]["lat"], points[i+1]["lng"]);
+      }
+      layer.bindPopup("Distance: " + this.roundToMiles(distance / 1609.386) + " miles");
+    }
+    
+    this.drawnItems.addLayer(layer);
+  }
+
+  distanceTo(x1, y1, x2, y2)  {
+    return Math.sqrt( Math.pow((x2-x1), 2) + Math.pow((y2-y1), 2) );
+  }
+
+  roundToMiles(dots)  {
+    return Math.round(dots * 100) / 100;
   }
 }
