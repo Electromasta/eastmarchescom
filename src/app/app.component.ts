@@ -43,6 +43,18 @@ export class AppComponent {
     } else if  (this.router.url === "/stolen")  {
       this.viewName = "/stolen"
       this.showNavbar = false;
+    } else if  (this.router.url === "/akros")  {
+      this.viewName = "/akros"
+      this.showNavbar = false;
+    } else if  (this.router.url === "/ravenwatch")  {
+      this.viewName = "/ravenwatch"
+      this.showNavbar = false;
+    } else if  (this.router.url === "/joanapur")  {
+      this.viewName = "/joanapur"
+      this.showNavbar = false;
+    } else if  (this.router.url === "/twincities")  {
+      this.viewName = "/twincities"
+      this.showNavbar = false;
     } else if  (this.router.url === "/era")  {
       this.viewName = "/era"
       this.showNavbar = true;

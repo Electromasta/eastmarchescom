@@ -21,7 +21,17 @@ import { Row } from './model/row.model';
 export class NavComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
   private headers = new HttpHeaders(); 
-  private testFile = 'assets/booklet/index.xml';
+  bfapiurl = 'https://eaknep3ofh.execute-api.us-east-1.amazonaws.com/bfapi/get-chapter/';
+  index = [
+            {"bookmark": "landing", "title": "World and Starter Adventures", "index": 0},
+            {"bookmark": "general", "title": "General Houserules", "index": 1},
+            {"bookmark": "races", "title": "Races", "index": 2},
+            {"bookmark": "classes", "title": "Classes", "index": 3},
+            {"bookmark": "feats", "title": "Feats and Fighting Styles", "index": 4},
+            {"bookmark": "cultures", "title": "Cultural Centers", "index": 5},
+            {"bookmark": "factions", "title": "Factions (Paladins)", "index": 6},
+            {"bookmark": "pantheon", "title": "Pantheon", "index": 7}
+          ];
   pages: Array<Page>;
   bookmark: Page;
 
@@ -29,14 +39,11 @@ export class NavComponent implements OnInit {
     this.viewportScroller.setOffset([0, 64]);
     this.headers = this.headers.append('Content-Type', 'text/xml'); 
     this.headers = this.headers.append('Accept', 'text/xml');
+    this.pages = new Array<Page>(this.index.length);
 
-    this.http.get(this.testFile, {responseType: 'text'}).subscribe(data => {
-      this.pages = new Array<Page>(this.read(data)['files'].file.length);
-      this.read(data)['files'].file.forEach(i => {
-        this.http.get('assets/booklet/' + i + '.xml', {responseType: 'text'}).subscribe(data => {
-          var json = this.read(data);
-          this.pages.splice(parseInt(json['page'].order, 10), 1, this.parse(json, i));
-        });
+    this.index.forEach(chapter => {
+      this.http.get(this.bfapiurl + chapter.bookmark).subscribe(data => {
+        this.pages[chapter.index] = this.parse(data["Items"], chapter);
       });
     });
   }
@@ -47,68 +54,62 @@ export class NavComponent implements OnInit {
     });
   }
 
-  read(data)  {
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(data, 'text/xml');
-    const json = this.ngxXml2jsonService.xmlToJson(xml);
-    return json;
-  }
-
   parse(json, filename) {
     var sections = new Array<Section>();
     var bookmark = 0;
 
-    this.arrayify(json['page'].section).forEach(section => {
+    this.arrayify(json).forEach(section => {
       var subsections: Array<Subsection> = new Array<Subsection>();
       var list: Array<Subsection> = new Array<Subsection>();
       var table: Table;
 
-      if (section.subsection != undefined)  {
-        this.arrayify(section.subsection).forEach(subsection => {
+      if (section.subsections != undefined)  {
+        this.arrayify(section.subsections.L).forEach(subsection => {
           var sublist: Array<Subsection> = new Array<Subsection>();
-          if (subsection.list != null){
-            this.arrayify(subsection.list).forEach(list => {
-              sublist.push(new Subsection(list.header, list.text));
+          if (subsection.M.list != null)  {
+            this.arrayify(subsection.M.list.L).forEach(point => {
+              sublist.push(new Subsection(point.M.name.S, point.M.desc.S));
             });
           }
-          subsections.push(new Subsection(subsection.header, subsection.text, sublist));
+          subsections.push(new Subsection(subsection.M.name.S, subsection.M.desc.S, sublist));
         });
       }
 
       if (section.list != null)  {
-        this.arrayify(section.list).forEach(point => {
-          list.push(new Subsection(point.header, point.text));
+        this.arrayify(section.list.L).forEach(point => {
+          list.push(new Subsection(point.M.name.S, point.M.desc.S));
         });
       }
 
-      if (section.table != null)  {
+      if (section.displayTable != null)  {
         var columns: Array<string> = new Array<string>();
         var rows: Array<Row> = new Array<Row>();
 
-        if (section.table.column != null)  {
-          this.arrayify(section.table.column).forEach(column => {
-            columns.push(column);
+        if (section.displayTable.M.columns != null)  {
+          this.arrayify(section.displayTable.M.columns.L).forEach(column => {
+            columns.push(column.S);
           });
         }
 
-        if (section.table.row != null)  {
-          this.arrayify(section.table.row).forEach(row => {
+        console.log(section);
+        if (section.displayTable.M.rows != null)  {
+          this.arrayify(section.displayTable.M.rows.L).forEach(row => {
             var cells: Array<string> = new Array<string>();
-            this.arrayify(row.cell).forEach(cell => {
-              cells.push(cell);
+            this.arrayify(row.L).forEach(cell => {
+              cells.push(cell.S);
             });
-            rows.push(new Row(row.name, cells));
+            rows.push(new Row("row.name", cells));
           });
         }
 
-        table = new Table(section.table.header, columns, rows);
+        table = new Table(section.displayTable.M.name.S, columns, rows);
       }
       
-      sections.push(new Section(filename + "-" + bookmark, section.header, section.text, subsections, list, table));
+      sections.push(new Section(filename + "-" + bookmark, section.name.S, section.desc.S, subsections, list, table));
       bookmark++;
     });
     
-    var page = new Page(Number(json.page.order), json.page.title, sections);
+    var page = new Page(0, filename.title, sections);
     return page;
   }
 

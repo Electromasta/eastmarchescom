@@ -1,1 +1,8 @@
-<p>twincities works!</p>
+<div style="height: 100%;"
+    leaflet leafletDraw
+    [leafletOptions]="leafoptions"
+    (leafletClick)="onClick($event)"
+    [leafletDrawOptions]="drawOptions"
+    (leafletDrawCreated)="onDrawCreated($event)">
+    <div [leafletLayer]="drawnItems"></div>>
+</div>
