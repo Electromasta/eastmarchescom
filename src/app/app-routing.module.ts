@@ -8,6 +8,10 @@ import { FarnorthComponent } from './hex/farnorth/farnorth.component';
 import { MulanComponent } from './hex/mulan/mulan.component';
 import { ShacklesComponent } from './hex/shackles/shackles.component';
 import { StolenComponent } from './hex/stolen/stolen.component';
+import { AkrosComponent } from './civ/akros/akros.component';
+import { JoanapurComponent } from './civ/joanapur/joanapur.component';
+import { RavenwatchComponent } from './civ/ravenwatch/ravenwatch.component';
+import { TwincitiesComponent } from './civ/twincities/twincities.component';
 import { NavComponent } from './nav/nav.component';
 import { RacesComponent } from './races/races.component';
 import { HeroComponent } from './hero/hero.component';
@@ -26,6 +30,10 @@ const routes: Routes = [
   {path: 'farnorth', component: FarnorthComponent},
   {path: 'mulan', component: MulanComponent},
   {path: 'shackles', component: ShacklesComponent},
+  {path: 'akros', component: AkrosComponent},
+  {path: 'joanapur', component: JoanapurComponent},
+  {path: 'ravenwatch', component: RavenwatchComponent},
+  {path: 'twincities', component: TwincitiesComponent},
   {path: 'stolen', component: StolenComponent},
   {path: 'era', component: EraComponent},
   {path: '**', component: NotfoundComponent}

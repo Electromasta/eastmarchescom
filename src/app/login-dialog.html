@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>{{title()}} <mat-slide-toggle [hidden]="verify" [(ngModel)]="register"></mat-slide-toggle></h1>
+<div mat-dialog-content [formGroup]="loginForm">
+  <mat-form-field style="margin-bottom: 20px">
+    <mat-label>User Name</mat-label>
+    <input matInput formControlName="username" maxlength="15">
+    <mat-error *ngIf="loginForm.get('username').invalid && loginForm.get('username').errors.required">User Name is Required</mat-error>
+    <mat-error *ngIf="loginForm.get('username').invalid && loginForm.get('username').errors.minlength">User Name should be at least 3 Characters</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field [hidden]="!register || verify" style="margin-bottom: 20px">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" maxlength="25">
+    <mat-error *ngIf="loginForm.get('email').invalid && loginForm.get('email').errors.required">Email is Required</mat-error>
+    <mat-error *ngIf="loginForm.get('email').invalid && loginForm.get('email').errors.email">Needs to be an Email</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field [hidden]="verify" style="margin-bottom: 20px">
+    <mat-label>Password</mat-label>
+    <input type="password" matInput formControlName="password" maxlength="20">
+    <mat-error *ngIf="loginForm.get('password').invalid && loginForm.get('password').errors.required">Password is Required</mat-error>
+    <mat-error *ngIf="loginForm.get('password').invalid && (loginForm.get('password').errors.minlength || loginForm.get('password').errors.pattern)">Password should be at least 10 Characters and have at least one capital, lowercase, number, and special character</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field [hidden]="!register || verify" style="margin-bottom: 20px">
+    <mat-label>Re-enter Password</mat-label>
+    <input type="password" matInput formControlName="verifypw" maxlength="20">
+    <mat-error *ngIf="loginForm.get('verifypw').invalid && loginForm.get('verifypw').errors.required">Verify Password is Required</mat-error>
+  </mat-form-field>
+  <mat-form-field [hidden]="!verify" style="margin-bottom: 20px">
+    <mat-label>Verify Phrase</mat-label>
+    <input matInput formControlName="verifyphrase" maxlength="30">
+  </mat-form-field>
+  <br>
+  <div style="color: red; font-size: 11px" *ngIf="register && getField('verifypw').length > 0 && !isMirroredCopy()">Verify Password must match Password</div>
+  <button [hidden]="(verify || !register)" mat-button (click)="switchClick()">Verify Phrase</button>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="onLoginClick()" [disabled]="!isValid()" cdkFocusInitial>{{title()}}</button>
+</div>
