@@ -2,6 +2,8 @@
     <span fxFlex fxFlexOffset="15%" fxFlexOffset.md="5%" fxFlexOffset.sm="2%" fxFlexOffset.xs="2%" routerLink="/"><div class="home">The Eastmarches</div></span>
     <div fxFlex="70%" fxFlex.md="90%" fxFlex.sm="96%" fxFlex.xs="96%"></div>
     <button mat-button routerLink="/atlas"><span>Atlas</span><mat-icon>public</mat-icon></button>
+    <button mat-button (click)="openDialog()" [hidden]="loggedin" disabled><span>Login</span><mat-icon>login</mat-icon></button>
+    <button mat-button [hidden]="!loggedin"><span>{{userInfo.username}}</span><mat-icon>perm_identity</mat-icon></button>
     <div fxFlex fxFlexOffset="15%" fxFlexOffset.md="5%" fxFlexOffset.sm="2%" fxFlexOffset.xs="2%"></div>
 </mat-toolbar>
 
