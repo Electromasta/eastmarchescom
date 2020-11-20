@@ -6,7 +6,6 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { MatTabChangeEvent } from '@angular/material/tabs';
 import { NgxXml2jsonService } from 'ngx-xml2json';
 
-import { NavService } from '../nav.service';
 import { Page } from './model/page.model';
 import { Section } from './model/section.model';
 import { Subsection } from './model/subsection.model';
@@ -19,7 +18,6 @@ import { Row } from './model/row.model';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  @ViewChild('sidenav') sidenav: MatSidenav;
   private headers = new HttpHeaders(); 
   bfapiurl = 'https://eaknep3ofh.execute-api.us-east-1.amazonaws.com/bfapi/get-chapter/';
   index = [
@@ -35,7 +33,7 @@ export class NavComponent implements OnInit {
   pages: Array<Page>;
   bookmark: Page;
 
-  constructor(private viewportScroller: ViewportScroller, private navService: NavService, private http: HttpClient, private ngxXml2jsonService: NgxXml2jsonService) {
+  constructor(private viewportScroller: ViewportScroller, private http: HttpClient, private ngxXml2jsonService: NgxXml2jsonService) {
     this.viewportScroller.setOffset([0, 64]);
     this.headers = this.headers.append('Content-Type', 'text/xml'); 
     this.headers = this.headers.append('Accept', 'text/xml');
@@ -49,9 +47,6 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit()  {
-    this.navService.$toggle.subscribe(val=> {
-      this.sidenav.toggle(val);
-    });
   }
 
   parse(json, filename) {
