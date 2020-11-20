@@ -1,0 +1,21 @@
+<div fxFlex="15%" fxFlex.md="5%" fxFlex.sm="2%" fxFlex.xs="2%"></div><div fxFlex="70%" fxFlex.md="90%" fxFlex.sm="96%" fxFlex.xs="96%" class="main">
+    <mat-tab-group animationDuration="0ms" (selectedTabChange)="tabChanged($event)" [dynamicHeight]="true">
+        <div *ngFor="let page of pages">
+        <mat-tab *ngIf="page" label="{{page.title}}" >
+            <div *ngFor="let section of page.sections">
+                <h1 id="{{section.bookmark}}">{{section.header}}</h1>
+                <p *ngIf="section.text">{{section.text}}</p>
+                <div *ngFor="let subsection of section.subsections">
+                    <h4><strong>{{subsection.header}}</strong></h4>
+                    <p *ngIf="subsection.text">{{subsection.text}}</p>
+                    <div *ngIf="subsection.list.length > 0">
+                        <ul>
+                            <li *ngFor="let point of subsection.list"><strong>{{point.header}}</strong>   {{point.text}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        </div>
+    </mat-tab-group>
+</div><div fxFlex="15%" fxFlex.md="5%" fxFlex.sm="2%" fxFlex.xs="2%"></div>

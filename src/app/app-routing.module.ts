@@ -9,6 +9,7 @@ import { MulanComponent } from './hex/mulan/mulan.component';
 import { ShacklesComponent } from './hex/shackles/shackles.component';
 import { StolenComponent } from './hex/stolen/stolen.component';
 import { NavComponent } from './nav/nav.component';
+import { RacesComponent } from './races/races.component';
 import { HeroComponent } from './hero/hero.component';
 import { EraComponent } from './era/era.component';
 import { NotfoundComponent } from './notfound/notfound.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: '', component: HeroComponent},
   {path: 'hero', component: HeroComponent},
   {path: 'nav', component: NavComponent},
+  {path: 'races', component: RacesComponent},
   {path: 'atlas', component: AtlasComponent},
   {path: 'hyland', component: HylandmapComponent},
   {path: 'hool', component: HoolComponent},

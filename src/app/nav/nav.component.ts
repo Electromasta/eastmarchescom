@@ -36,6 +36,7 @@ export class NavComponent implements OnInit {
         this.http.get('assets/booklet/' + i + '.xml', {responseType: 'text'}).subscribe(data => {
           var json = this.read(data);
           this.pages.splice(parseInt(json['page'].order, 10), 1, this.parse(json, i));
+          this.bookmark = this.pages[0];
         });
       });
     });
