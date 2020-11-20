@@ -23,12 +23,12 @@ export class NavComponent implements OnInit {
   index = [
             {"bookmark": "landing", "title": "World and Starter Adventures", "index": 0},
             {"bookmark": "general", "title": "General Houserules", "index": 1},
-            {"bookmark": "races", "title": "Races", "index": 2},
-            {"bookmark": "classes", "title": "Classes", "index": 3},
-            {"bookmark": "feats", "title": "Feats and Fighting Styles", "index": 4},
-            {"bookmark": "cultures", "title": "Cultural Centers", "index": 5},
-            {"bookmark": "factions", "title": "Factions (Paladins)", "index": 6},
-            {"bookmark": "pantheon", "title": "Pantheon", "index": 7}
+            //{"bookmark": "races", "title": "Races", "index": 2},
+            {"bookmark": "classes", "title": "Classes", "index": 2},
+            {"bookmark": "feats", "title": "Feats and Fighting Styles", "index": 3},
+            {"bookmark": "cultures", "title": "Cultural Centers", "index": 4},
+            {"bookmark": "factions", "title": "Factions (Paladins)", "index": 5},
+            {"bookmark": "pantheon", "title": "Pantheon", "index": 6}
           ];
   pages: Array<Page>;
   bookmark: Page;
