@@ -44,6 +44,7 @@ import { RavenwatchComponent } from './civ/ravenwatch/ravenwatch.component';
 import { TwincitiesComponent } from './civ/twincities/twincities.component';
 import { SaltmarshComponent } from './civ/saltmarsh/saltmarsh.component';
 import { PhandalinComponent } from './civ/phandalin/phandalin.component';
+import { RacesComponent } from './races/races.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { PhandalinComponent } from './civ/phandalin/phandalin.component';
     RavenwatchComponent,
     TwincitiesComponent,
     SaltmarshComponent,
-    PhandalinComponent
+    PhandalinComponent,
+    RacesComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule,
