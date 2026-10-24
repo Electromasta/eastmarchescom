@@ -27,7 +27,8 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - run: npm ci
+      # The lockfile was made with legacy peer-dependency handling (Angular 9's peers don't satisfy newer npm)
+      - run: npm ci --legacy-peer-deps
       # Served at https://electromasta.github.io/<repo>/ for now. Once a custom domain is set in
       # Settings → Pages, change BASE_HREF to /
       - run: npx ng build --prod --base-href "$BASE_HREF"
