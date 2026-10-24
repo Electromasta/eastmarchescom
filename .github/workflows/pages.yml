@@ -29,11 +29,11 @@ jobs:
           cache: npm
       # The lockfile was made with legacy peer-dependency handling (Angular 9's peers don't satisfy newer npm)
       - run: npm ci --legacy-peer-deps
-      # Served at https://electromasta.github.io/<repo>/ for now. Once a custom domain is set in
-      # Settings → Pages, change BASE_HREF to /
+      # Served at the root of its custom domain (Settings → Pages). For the electromasta.github.io/<repo>/
+      # address instead, use BASE_HREF: /${{ github.event.repository.name }}/
       - run: npx ng build --prod --base-href "$BASE_HREF"
         env:
-          BASE_HREF: /${{ github.event.repository.name }}/
+          BASE_HREF: /
           NODE_OPTIONS: --openssl-legacy-provider
       # Routes are handled in the browser: serve the app for unknown paths too, so deep links work
       - run: cp dist/eastmarches/index.html dist/eastmarches/404.html
