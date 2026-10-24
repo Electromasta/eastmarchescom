@@ -14,7 +14,7 @@ export class AtlasComponent implements OnInit {
 
   leafoptions = {
     layers: [
-      tileLayer('/assets/leaflets/atlas/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
+      tileLayer('assets/leaflets/atlas/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
     ],
     crs: Util.extend({}, CRS.Simple, {
       transformation: new Transformation(0.00009648, 0.00009648, 0.00009648, 0.00009648)

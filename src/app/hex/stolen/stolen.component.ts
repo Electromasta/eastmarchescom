@@ -14,7 +14,7 @@ export class StolenComponent implements OnInit {
 
   leafoptions = {
     layers: [
-      tileLayer('/assets/leaflets/hexmaps/6_stolen/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
+      tileLayer('assets/leaflets/hexmaps/6_stolen/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
     ],
     crs:  Util.extend({}, CRS.Simple, {
       transformation: new Transformation(0.000548, 0.000548, 0.000548, 0.000548)

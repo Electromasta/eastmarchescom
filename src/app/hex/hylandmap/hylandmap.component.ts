@@ -14,7 +14,7 @@ export class HylandmapComponent implements OnInit {
 
   leafoptions = {
     layers: [
-      tileLayer('/assets/leaflets/hexmaps/1_hyland/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
+      tileLayer('assets/leaflets/hexmaps/1_hyland/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
     ],
     crs:  Util.extend({}, CRS.Simple, {
       transformation: new Transformation(0.000585, 0.000585, 0.000585, 0.000585)

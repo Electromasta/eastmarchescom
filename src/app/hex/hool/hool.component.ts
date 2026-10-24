@@ -14,7 +14,7 @@ export class HoolComponent implements OnInit {
 
   leafoptions = {
     layers: [
-      tileLayer('/assets/leaflets/hexmaps/2_hool/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
+      tileLayer('assets/leaflets/hexmaps/2_hool/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
     ],
     crs:  Util.extend({}, CRS.Simple, {
       transformation: new Transformation(0.00051, 0.00051, 0.00051, 0.00051)

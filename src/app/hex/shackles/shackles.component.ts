@@ -14,7 +14,7 @@ export class ShacklesComponent implements OnInit {
 
   leafoptions = {
     layers: [
-      tileLayer('/assets/leaflets/hexmaps/4_shackles/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
+      tileLayer('assets/leaflets/hexmaps/4_shackles/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...', tileSize: 1024 })
     ],
     crs:  Util.extend({}, CRS.Simple, {
       transformation: new Transformation(0.000302, 0.000302, 0.000302, 0.000302)
